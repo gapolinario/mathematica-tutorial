@@ -1,0 +1,236 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6713,        228]
+NotebookOptionsPosition[      5889,        205]
+NotebookOutlinePosition[      6319,        222]
+CellTagsIndexPosition[      6276,        219]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{"Range", "[", "100", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8862351246887407`*^9, 3.886235131339109*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"0b9c3df6-8f51-402b-82be-5cf4be1ca181"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", "/.", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"n_", "/;", 
+      RowBox[{
+       RowBox[{"Mod", "[", 
+        RowBox[{"n", ",", "15"}], "]"}], "==", "0"}]}], "->", 
+     "\"\<FizzBuzz\>\""}], ",", 
+    RowBox[{
+     RowBox[{"n_", "/;", 
+      RowBox[{
+       RowBox[{"Mod", "[", 
+        RowBox[{"n", ",", "3"}], "]"}], "==", "0"}]}], "->", "\"\<Fizz\>\""}],
+     ",", 
+    RowBox[{
+     RowBox[{"n_", "/;", 
+      RowBox[{
+       RowBox[{"Mod", "[", 
+        RowBox[{"n", ",", "5"}], "]"}], "==", "0"}]}], "->", 
+     "\"\<Buzz\>\""}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.886235133338173*^9, 3.886235143577149*^9}, {
+  3.8862352716493073`*^9, 3.886235273585126*^9}, {3.88623532557726*^9, 
+  3.886235374745307*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"f50609f1-b2b5-422b-acc4-0957d60506d2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "\<\"Fizz\"\>", ",", "4", ",", "\<\"Buzz\"\>", 
+   ",", "\<\"Fizz\"\>", ",", "7", ",", "8", ",", "\<\"Fizz\"\>", 
+   ",", "\<\"Buzz\"\>", ",", "11", ",", "\<\"Fizz\"\>", ",", "13", ",", "14", 
+   ",", "\<\"FizzBuzz\"\>", ",", "16", ",", "17", ",", "\<\"Fizz\"\>", ",", 
+   "19", ",", "\<\"Buzz\"\>", ",", "\<\"Fizz\"\>", ",", "22", ",", "23", 
+   ",", "\<\"Fizz\"\>", ",", "\<\"Buzz\"\>", ",", "26", ",", "\<\"Fizz\"\>", 
+   ",", "28", ",", "29", ",", "\<\"FizzBuzz\"\>", ",", "31", ",", "32", 
+   ",", "\<\"Fizz\"\>", ",", "34", ",", "\<\"Buzz\"\>", ",", "\<\"Fizz\"\>", 
+   ",", "37", ",", "38", ",", "\<\"Fizz\"\>", ",", "\<\"Buzz\"\>", ",", "41", 
+   ",", "\<\"Fizz\"\>", ",", "43", ",", "44", ",", "\<\"FizzBuzz\"\>", ",", 
+   "46", ",", "47", ",", "\<\"Fizz\"\>", ",", "49", ",", "\<\"Buzz\"\>", 
+   ",", "\<\"Fizz\"\>", ",", "52", ",", "53", ",", "\<\"Fizz\"\>", 
+   ",", "\<\"Buzz\"\>", ",", "56", ",", "\<\"Fizz\"\>", ",", "58", ",", "59", 
+   ",", "\<\"FizzBuzz\"\>", ",", "61", ",", "62", ",", "\<\"Fizz\"\>", ",", 
+   "64", ",", "\<\"Buzz\"\>", ",", "\<\"Fizz\"\>", ",", "67", ",", "68", 
+   ",", "\<\"Fizz\"\>", ",", "\<\"Buzz\"\>", ",", "71", ",", "\<\"Fizz\"\>", 
+   ",", "73", ",", "74", ",", "\<\"FizzBuzz\"\>", ",", "76", ",", "77", 
+   ",", "\<\"Fizz\"\>", ",", "79", ",", "\<\"Buzz\"\>", ",", "\<\"Fizz\"\>", 
+   ",", "82", ",", "83", ",", "\<\"Fizz\"\>", ",", "\<\"Buzz\"\>", ",", "86", 
+   ",", "\<\"Fizz\"\>", ",", "88", ",", "89", ",", "\<\"FizzBuzz\"\>", ",", 
+   "91", ",", "92", ",", "\<\"Fizz\"\>", ",", "94", ",", "\<\"Buzz\"\>", 
+   ",", "\<\"Fizz\"\>", ",", "97", ",", "98", ",", "\<\"Fizz\"\>", 
+   ",", "\<\"Buzz\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.886235341480918*^9, 3.886235375185134*^9}, 
+   3.8862359920822773`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"02165b21-af0a-40f4-b288-1917bbdc279e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Column", "@", "%"}]], "Input",
+ CellChangeTimes->{{3.886235983178732*^9, 3.886235989783761*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"3dc5e96d-4919-4d45-8762-12d1c086d21b"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"1"},
+    {"2"},
+    {"\<\"Fizz\"\>"},
+    {"4"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"7"},
+    {"8"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"},
+    {"11"},
+    {"\<\"Fizz\"\>"},
+    {"13"},
+    {"14"},
+    {"\<\"FizzBuzz\"\>"},
+    {"16"},
+    {"17"},
+    {"\<\"Fizz\"\>"},
+    {"19"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"22"},
+    {"23"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"},
+    {"26"},
+    {"\<\"Fizz\"\>"},
+    {"28"},
+    {"29"},
+    {"\<\"FizzBuzz\"\>"},
+    {"31"},
+    {"32"},
+    {"\<\"Fizz\"\>"},
+    {"34"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"37"},
+    {"38"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"},
+    {"41"},
+    {"\<\"Fizz\"\>"},
+    {"43"},
+    {"44"},
+    {"\<\"FizzBuzz\"\>"},
+    {"46"},
+    {"47"},
+    {"\<\"Fizz\"\>"},
+    {"49"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"52"},
+    {"53"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"},
+    {"56"},
+    {"\<\"Fizz\"\>"},
+    {"58"},
+    {"59"},
+    {"\<\"FizzBuzz\"\>"},
+    {"61"},
+    {"62"},
+    {"\<\"Fizz\"\>"},
+    {"64"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"67"},
+    {"68"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"},
+    {"71"},
+    {"\<\"Fizz\"\>"},
+    {"73"},
+    {"74"},
+    {"\<\"FizzBuzz\"\>"},
+    {"76"},
+    {"77"},
+    {"\<\"Fizz\"\>"},
+    {"79"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"82"},
+    {"83"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"},
+    {"86"},
+    {"\<\"Fizz\"\>"},
+    {"88"},
+    {"89"},
+    {"\<\"FizzBuzz\"\>"},
+    {"91"},
+    {"92"},
+    {"\<\"Fizz\"\>"},
+    {"94"},
+    {"\<\"Buzz\"\>"},
+    {"\<\"Fizz\"\>"},
+    {"97"},
+    {"98"},
+    {"\<\"Fizz\"\>"},
+    {"\<\"Buzz\"\>"}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ CellChangeTimes->{{3.886235985713052*^9, 3.8862359926273603`*^9}},
+ CellLabel->"Out[25]=",ExpressionUUID->"aa6dfaa9-8255-479e-b204-779e3f8a1c58"]
+}, Open  ]]
+},
+WindowSize->{808, 726},
+WindowMargins->{{Automatic, -1265}, {-29, Automatic}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"52248e8e-8158-4d5d-a05b-00f57a735816"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 249, 5, 46, "Input",ExpressionUUID->"0b9c3df6-8f51-402b-82be-5cf4be1ca181"],
+Cell[CellGroupData[{
+Cell[832, 29, 844, 25, 78, "Input",ExpressionUUID->"f50609f1-b2b5-422b-acc4-0957d60506d2"],
+Cell[1679, 56, 1906, 28, 349, "Output",ExpressionUUID->"02165b21-af0a-40f4-b288-1917bbdc279e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3622, 89, 199, 3, 46, "Input",ExpressionUUID->"3dc5e96d-4919-4d45-8762-12d1c086d21b"],
+Cell[3824, 94, 2049, 108, 2670, "Output",ExpressionUUID->"aa6dfaa9-8255-479e-b204-779e3f8a1c58"]
+}, Open  ]]
+}
+]
+*)
+
