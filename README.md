@@ -1,3 +1,5 @@
+Resources for short tutorial on the Mathematica / Wolfram language, held at the Wilczek group (TP1, University of Bayreuth), 16/03/2023
+
 Resources:
 
 1. Mathematica: A Problem-Centered Approach, Roozbeh Hazrat, Springer (2015) [link](https://link.springer.com/book/10.1007/978-3-319-27585-7)
